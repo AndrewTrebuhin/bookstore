@@ -8,16 +8,19 @@
 </head>
 <body class='<%= controller.controller_name %>'>
   <div id="banner">
-    <%= image_tag("logo.png") %>
+    <%= link_to image_tag("logo.png", width: 60), store_path %>
     <%= @page_title || "Pragmatic Bookshelf" %>
   </div>
   <div id="columns">
     <div id="side">
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><%= link_to 'Home', store_path %></li>
         <li><a href="#">Questions</a></li>
         <li><a href="#">News</a></li>
         <li><a href="#">Contact</a></li>
+        <% if session[:counter] > 5 %>
+          <li><a href="#">Counter: <%= session[:counter] %></a></li>
+        <% end %>
       </ul>
     </div>
     <div id="main">
