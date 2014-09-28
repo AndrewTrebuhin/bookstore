@@ -1,0 +1,55 @@
+ru:
+
+  thanks: "Спасибо за Ваш заказ"
+
+  layouts:
+    application:
+      title: "Книжная лавка"
+      home: "Главная"
+      questions: "Вопросы"
+      news: "Новости"
+      contact: "Контакты"
+
+  store:
+    index:
+      title_html: "Твоя книжная лавка"
+      add_html: "Добавить в корзину"
+
+  carts:
+    cart:
+      title: "Ваша корзина"
+      empty: "Очистить корзину"
+      checkout: "Оформить заказ"
+
+  orders:
+    new:
+      legend: "Пожалуйста введите Ваши данные"
+    form:
+      name: "ФИО"
+      address: "Адресс"
+      email: "Email"
+      pay_type: "Оплата"
+      pay_prompt: "Способ оплаты"
+      submit: "Оформить заказ"
+
+
+  activerecord:
+    models:
+      order: "Заказ"
+    attributes:
+      order:
+        address: "Адресс"
+        name: "ФИО"
+        pay_type: "Способ оплаты"
+
+    errors:
+      messages:
+        inclusion: "выберите один из вариантов"
+        blank: "не может быть пустым"
+
+  errors:
+    template:
+      body: "Что-то пошло не так..."
+      header:
+        one: "Была обнаружена 1 ошибка в %{model}"
+        other: "%{count} ошибок было обнаружено в %{model}"
